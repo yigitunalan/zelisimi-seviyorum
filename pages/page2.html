@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SENİ ÇOK SEVİYORUM</title>
+
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/buttons.css">
+        <link rel="stylesheet" href="../music-player/music-player.css">
+        <link rel="stylesheet" href="../heart-rose-star/heart-rose-star.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="hearts-container"></div>
+        <div class="roses-container"></div>
+        <div class="stars-container"></div>
+
+        <img src="../gifs/dudu-bubu.gif">
+
+        <h2> 
+            seni her ne kadar bazen sinir etsem de bana katlandığın, beni olduğum gibi göbüşümle ve ben olarak sevdiğin, bana karşı dürüst ve kendin olduğun için,
+        </h2>
+
+        <a href="page3.html">
+            <button>→</button>
+        </a>
+
+        <div id="music-player">
+            <button id="play-pause-btn">❚❚</button>
+            <p id="music-info">00:00 / 00:00</p>
+            <div class="volume-control">
+                <span id="volume-icon">🔊</span>
+                <input type="range" id="volume-slider" min="0" max="1" step="0.05">
+            </div>
+        </div>
+
+        <audio id="bg-music" loop>
+            <source src="../music-player/songs/lisa-rockstar.mp3" type="audio/mp3">
+        </audio>
+       
+        <script src="../music-player/music-player.js"></script> 
+        <script src="../heart-rose-star/heart-rose-star.js"></script>
+    </body>
+</html>

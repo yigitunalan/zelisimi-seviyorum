@@ -1,0 +1,20 @@
+.images img {
+    max-width: 300px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.buttons {
+    display: flex;
+    gap: 50px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#noButton {
+    background: linear-gradient(45deg, #8b0000, #ff0000);
+    color: white;
+    box-shadow: 0 4px 15px rgba(139, 0, 0, 0.6);
+}

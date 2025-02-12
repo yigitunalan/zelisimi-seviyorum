@@ -1,0 +1,83 @@
+#music-player {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, rgba(255, 150, 200, 0.8), rgba(255, 100, 150, 0.9));
+    padding: 12px 15px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(255, 50, 100, 0.3);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 50, 100, 0.3);
+}
+
+#music-info {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin: 0 12px;
+    min-width: 80px;
+}
+
+#play-pause-btn {
+    font-size: 20px;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    padding: 6px;
+    transition: transform 0.2s ease-in-out;
+
+    /* Center the icon perfectly */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+
+    /* Fix the vertical alignment */
+    line-height: 1; 
+    transform: translateY(-1px);
+}
+
+#play-pause-btn:hover {
+    transform: scale(1.2) translateY(-1px);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Volume control */
+.volume-control {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#volume-icon {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#volume-icon:hover {
+    transform: scale(1.2);
+}
+
+#volume-slider {
+    width: 80px;
+    height: 4px;
+    -webkit-appearance: none;
+    background: white;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#volume-slider:hover {
+    height: 6px;
+}
